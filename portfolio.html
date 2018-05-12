@@ -12,8 +12,10 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
 		<!--link to css stylesheet-->
-		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/style/style.css">
 
+        <!--link to google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     </head>
     
     <body>
@@ -21,26 +23,153 @@
         <div class = "container-fluid">
 
             <!--code for navbar, responsive navbar code and links-->
-            <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+            <nav class = "navbar fixed-top navbar-expand-lg navbar-light" style = "background-color: #cfecff;">
                 <a class = "navbar-brand" href = "#">Thomas A. Wickham</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
-                    <ul class = "navbar-nav mr-auto">
-                        <li class = "nav-item active">
-                            <a class = "nav-link" href = "#">About Me</a>
+                <div class = "collapse navbar-collapse" id = "navbarSupportedContent" style = "text-align: center;">
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#about-me">About Me</a>
                         </li>
                         <li class = "nav-item">
-                            <a class = "nav-link" href = "#">My Projects</a>
+                            <a class = "nav-link" href = "#projects">My Projects</a>
                         </li>
                         <li class = "nav-item">
-                            <a class = "nav-link" href = "#">Contact</a>
+                            <a class = "nav-link" href = "#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
+                <div class = "social-links clearfix">
+                    <ul style = "list-style-type:none">
+                        <li class = "nav-item">
+                            <a class = "nav-link" id = "linkedin" href = "https://www.linkedin.com/in/thomas-a-wickham/" target = "_blank">
+                                <img src= "./assets/images/Linkedin-logo-1-550x550-300x300.png" style = "width:50px; height:50px">
+                            </a>
+                        </li>
+                        <li>
+                            <a class = "nav-link" id = "github" href = "https://github.com/twicklvnv" target = "_blank">
+                                <img src= "./assets/images/github.png" style = "width:50px; height:50px">
+                            </a>
+                       </li>
+                    </ul>
+                </div>
             </nav>
+        </div>
+        <br>
+        <!--<div class = "container-fluid intro">
+            <h3>Full Stack Web Developer Specializing in Front End and React</h3>
+            
+        </div>-->
+
+        <div class = "main-background" style = "height:800px;">
+            <h4 class = "slogan">Full Stack Web Developer Specializing in Front End and React</h4>
+            
+            <h4>The Road To Your Web Development</h4>
+            
+        </div>
+
+        <div class = "container-fluid about-me" id = "about-me">
+            <h4>About Me</h4>
+            <br>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-1">
+                    <img src = "./assets/images/20180301_150856.jpg" alt = "pictire of me" style = "width:200px;height:350px;">
+                </div>
+                <div class = "col-md-6" id = "bio">
+                    <p>My name is Thomas Wickham and I am a full stack web developer in the Denver metro area specializing in front end development and react.js.
+                        I enjoy coding awesome and responsive web sites using HTML, CSS, Javascript, react, and many
+                        other frameworks and libraries.
+                    </p>
+                    <p>I also have a strong interest in the sciences and in histroy. My degree is actually a B.S. in Geology from 
+                        the University of New Mexico and have been working in the environmental laboratory industry before
+                        transitioning into web development. Computers, technology, and the web have also been long time interests of mine.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container-fluid" id = "projects">
+            <h4>A Few of My Projects</h4>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-1" id = "project-intro">
+                    <p>Here is a selection of a few of my projects that I have 
+                        worked on individually or as part of a group project.
+                    </p>
+                </div>
+                <div class = "col-md-3 offset-md-1">
+                    <a href = "https://twicklvnv.github.io/Cystal-Collector-Game/" target = "_blank">
+                        <img src = "./assets/images/CrystalCollector1.jpg" alt = "picture of crystal collector game" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+                <div class = "col-md-3 offset-md-1">
+                    <a href = "https://twicklvnv.github.io/GifTastic/" target = "_blank">
+                        <img src = "./assets/images/GifTastic1.jpg" alt = "picture of giftastic project" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-5">
+                    <a href = "https://twicklvnv.github.io/TrainScheduler/" target = "_blank">
+                        <img src = "./assets/images/train.jpg" alt = "picture of train schedule project" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+                <div class = "col-md-3 offset-md-1">
+                    <a href = "https://github.com/twicklvnv/bamazon" target = "_blank">
+                        <img src = "./assets/images/bamazon.png" alt = "picture of bamazon project" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-5">
+                    <a href = "https://twicklvnv.github.io/TriviaGame/" target = "_blank">
+                        <img src = "./assets/images/trivia.jpg" alt = "picture of trivia game" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+                <div class = "col-md-3 offset-md-1">
+                    <a href = "https://lit-mountain-39553.herokuapp.com/" target = "_blank">
+                        <img src = "./assets/images/HangerGames.jpg" alt = "picture of hanger games project" style = "width:200px;height:150px;">
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+
+        <div class = "container-fluid" id = "contact">
+                <h4>My Contact Info</h4>
+                <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-2" id = "contact-intro">
+                    <p>I would love to hear from you! Here is how you can 
+                        contact me.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-5" id = "email">
+                    <p>Email:</p>
+                    <p>twickdenco@gmail.com</p>
+                    <p>twicklvnv@yahoo.com</p>
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-md-3 offset-md-8" id = "phone">
+                    <p>Phone Number:</p>
+                    <p>720-445-1690</p>
+                </div>
+            </div>
+            <br>
         </div>
 
 
